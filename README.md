@@ -8,7 +8,7 @@ The exercises are written in **Python** and cover fundamental topics of the cour
 ---
 
 ### Repository Content  
-- **Folders organized by topic or lesson** (e.g., `01_variables`, `02_conditions`, `03_loops`, etc.).  
+- **Folders organized by topic** (e.g., `01_variables`, `02_conditions`, `03_loops`, etc.).  
 - Each exercise includes a brief description or comments explaining the problem and its solution.
 
 ---

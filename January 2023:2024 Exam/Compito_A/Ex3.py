@@ -1,18 +1,39 @@
-def Ex3(nomeFile):
+def Ex3(filename):
     import pandas as pd
     import numpy as np
+    result = {}
+    df = pd.read_csv(filename, header=None)
+    matrix = np.array(df.values)
+    rows = matrix.shape[0]
+    columns = matrix.shape[1]
+    max_path = 0
+    result = set()
     
-    csv = pd.read_csv(fileName, header="intestazione")
-    ar = np.array(csv.values)
-    shape = ar.shape
-    rows = shape[0]
-    columns = shape[1]
-    res = set()
-    maxRoad = 0
-    zig = 1 #zig-> We go down; zag -> We go right (zig+zag = diagonal)
-    
-    for i in range(1, rows-1): #iteration on the "middle" rows
-        
+    for i in range(1, rows - 1):
+        path = matrix[i, 0]
+        print(i, path, end='+')
+        current_row = i
+        direction = -1
+
+        for j in range(1, columns):
+            if current_row == 0:
+                direction = 1  # change direction downwards
+            elif current_row == rows - 1:
+                direction = -1  # change direction upwards
+
+            #diagonal movement
+            current_row += direction #salgo o scendo
+            path += matrix[current_row, j] #diagonale completato
+            print(matrix[current_row, j], end='+')
+
+        print('=', path)
+        if path > max_path:
+            result = {i}
+            max_path = path
+        elif path == max_path:
+            result.add(i)
+
+    return result
 
 
     

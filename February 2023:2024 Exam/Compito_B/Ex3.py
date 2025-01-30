@@ -1,3 +1,12 @@
+#INFO ABOUT np.load.txt()
+    #-> np.load.txt(fileName, delimeter=",") reads and already creates the NumPy array.
+#BUT:
+    #-> If you have a string and not integers, you need to use np.getfromtxt and choose the dtype...
+    #->... Like this: np.genfromtxt('testob1.txt', delimiter='\n', dtype=str)
+#HIM BUT BETTER
+    #->  gen(generalized)fromtxt is the same but for more data types
+    #->  If you have mixed data types (e.g., integers+strings), you can set dtype=None to let NumPy automatically determine the appropriate data type.
+
 def Ex3(nomeFile):
     import pandas as pd
     import numpy as np

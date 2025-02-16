@@ -1,5 +1,24 @@
 def Ex7(fileName):
-    """MODIFICARE IL CONTENUTO DI QUESTA FUNZIONE PER SVOLGERE L'ESERCIZIO"""
+    with open(fileName, 'r', encoding='UTF-8') as f:
+        nums = []
+        for line in f:
+            words = line.split()
+            for word in words:
+                if word.isdigit():
+                    nums.append(int(word))
+    return sum(nums)
+
+"""
+NOTES: there is a powerful other way to do this, using REGEX:
+
+import re
+def Ex7(fileName):
+    with open(fileName, 'r', encoding='UTF-8') as f:
+        content = f.read()
+        nums = map(int, re.findall(r'\d+', content))
+    return sum(nums)
+
+"""
 
  
 ###############################################################################

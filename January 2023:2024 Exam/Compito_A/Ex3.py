@@ -1,3 +1,7 @@
+# In the exam I cannot use pandas. 
+    #-> I can use np.loadtxt(filename, delimiter= ',') which does the job of both pd.read_csv and np.array(df.values)
+    #-> There is a catch: pd.read_csv() is much more powerful in handling complicated situations, but np.loadtxt still gets the job done.
+
 def Ex3(filename):
     import pandas as pd
     import numpy as np

@@ -1,0 +1,31 @@
+# Lettera Compito; Numero esercizio ; Numero test ; lista degli inputs; output atteso
+D;1;1;[['tanto', 'va', 'la', 'gatta', 'al', 'lardo', 'che', 'ci', 'lascia', 'lo', 'zampino'], 2];(1, 2)
+D;1;2;[['tanto', 'va', 'la', 'gatta', 'al', 'lardo', 'che', 'ci', 'lascia', 'lo', 'zampino'], 4];(0, 9)
+D;1;3;[['questi', 'esercizi', 'sembrano', 'facili'], 0];(1, 2)
+D;1;4;[['questi', 'esercizi', 'sembrerebbero', 'facili'], 1];(-1, -1)
+D;1;5;[['questi', 'esercizi', 'sembrano', 'facili'], 1];(1, 2)
+D;1;6;[['nel', 'mezzo', 'del', 'cammin', 'di', 'nostra', 'vita'], 1];(-1, -1)
+D;1;7;[['nel', 'mezzo', 'del', 'cammin', 'di', 'nostra', 'vita'], 3];(0, 3)
+D;1;8;[['Notevole', 'esempio', 'di', 'lista', 'di', 'stringhe'], 2];(0, 1)
+D;1;9;[['Notevole', 'esempio', 'di', 'lista', 'di', 'stringhe'], 3];(2, 4)
+D;1;10;[['Notevole'], 0];(-1, -1)
+D;2;1;['testod1.txt'];{5: {'tanto', 'vanno', 'lardo', 'gatti'}, 2: {'al', 'ci'}, 3: {'gli', 'che'}, 11: {'pascolavano', 'superlativi'}}
+D;2;2;['testod2.txt'];{6: {'sembra', 'noioso', 'questo'}, 9: {'esercizio', 'veramente'}, 2: {'ma', 'lo'}, 4: {'fare', 'devo'}}
+D;2;3;['testod3.txt'];{3: {'non', 'sia', 'mai', 'che'}, 6: {'noioso', 'questo', 'quanto'}, 9: {'risolvere', 'esercizio'}, 10: {'concepirlo', 'soffermati'}}
+D;2;4;['testod4.txt'];{3: {'mio', 'due', 'zio', 'tre', 'sei', 'uno'}}
+D;2;5;['testod5.txt'];{}
+D;2;6;['testod6.txt'];{}
+D;2;7;['testod7.txt'];{3: {'due', 'uno'}}
+D;2;8;['testod8.txt'];{1: {'c', 'i', 'h', 'b', 'g', 'd', 'n', 'f', 'l', 'e', 'a', 'm'}}
+D;2;9;['testod9.txt'];{7: {'stufato', 'proprio'}}
+D;2;10;['testod10.txt'];{5: {'lunga', 'prova'}, 3: {'tre', 'due', 'uno'}}
+D;3;1;['eventi1.csv', 2022];{'Concerto'}
+D;3;2;['eventi1.csv', 2021];{'Concerto'}
+D;3;3;['eventi1.csv', 2020];{'Sport'}
+D;3;4;['eventi1.csv', 2019];set()
+D;3;5;['eventi2.csv', 2022];{'Concerto', 'Sport', 'Teatro'}
+D;3;6;['eventi2.csv', 2021];{'Mostra'}
+D;3;7;['eventi3.csv', 2022];set()
+D;3;8;['eventi1.csv', 2000];set()
+D;3;9;['eventi4.csv', 2000];{'Sport'}
+D;3;10;['eventi5.csv', 2000];{'Mostra'}

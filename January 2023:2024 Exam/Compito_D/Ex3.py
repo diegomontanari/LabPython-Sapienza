@@ -1,5 +1,35 @@
+import numpy as np
+
 def Ex3(file,n):
-    """MODIFICARE IL CONTENUTO DI QUESTA FUNZIONE PER SVOLGERE L'ESERCIZIO"""
+    pos = {}
+    with open(file, 'r', encoding='UTF-8') as f:
+        giocatori = f.readline().strip().split(',')
+        for nome in giocatori:
+            pos[nome] = 0 # Inizializzare i giocatori a posizione 0
+    ar = np.loadtxt(file, delimiter=',')
+    for turno in ar:
+        for i in range(len(turno)): # for i in turno non va bene perché mi serve l'indice, non l'elemento e basta.
+            tiro = int(turno[i]) # (Brilliant!!)
+            giocatore = giocatori[i] # (Brilliant!!) Così accoppio il giocatore al suo lancio, usando lo stesso contatore!
+            fermo = False
+            if pos[giocatore] + tiro == n:
+                return giocatore
+            if pos[giocatore] + tiro < n:
+                for altro in giocatori:
+                    if altro != giocatore and pos[altro] == pos[giocatore] + tiro: # {if altro != giocatore} Per evitare di confrontare il giocatore con sé stesso
+                        fermo=True                  
+            if pos[giocatore] + tiro > n:
+                fermo=True
+            if not fermo:
+                pos[giocatore] = pos[giocatore] + tiro
+    return 'Nessuno'      
+                   
+             
+
+
+
+
+             
 
 ###############################################################################
 

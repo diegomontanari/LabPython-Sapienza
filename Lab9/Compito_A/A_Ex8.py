@@ -1,4 +1,3 @@
-
 def Ex8(file):
     d = {}
     with open(file, 'r', encoding='UTF-8') as f:

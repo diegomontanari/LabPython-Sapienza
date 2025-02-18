@@ -40,32 +40,6 @@ Analyzing system logs to extract specific information.
 Manipulating strings in various file formats like CSV, XML, or JSON.
 In short, regular expressions are a powerful and flexible tool for managing textual data in Python.
 
-| Categoria           | Simbolo/Pattern                                                          | Descrizione                                                                    | Esempio                                   |
-|---------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------------|
-| Caratteri letterali | cat                                                                      | Corrisponde esattamente al testo indicato.                                     | cat corrisponde a “cat”.                  |
-| Metacaratteri       | .                                                                        | Corrisponde a qualsiasi carattere, tranne un ritorno a capo.                   | a.b corrisponde a “acb”, “a2b”.           |
-| *                   | Zero o più ripetizioni dell’elemento precedente.                         | a*b corrisponde a “b”, “ab”, “aaab”.                                           |                                           |
-| +                   | Una o più ripetizioni dell’elemento precedente.                          | a+b corrisponde a “ab”, “aaab” (non “b”).                                      |                                           |
-| ?                   | Zero o una ripetizione dell’elemento precedente.                         | colou?r corrisponde a “color” o “colour”.                                      |                                           |
-| Classi di caratteri | [abc]                                                                    | Qualsiasi carattere tra quelli specificati.                                    | [abc] corrisponde a “a”, “b” o “c”.       |
-| [^abc]              | Qualsiasi carattere tranne quelli specificati.                           | [^abc] corrisponde a “d”, “e” (non “a”).                                       |                                           |
-| [0-9]               | Qualsiasi cifra numerica.                                                | [0-9] corrisponde a “0”, “1”, “9”.                                             |                                           |
-| [a-z]               | Qualsiasi lettera minuscola.                                             | [a-z] corrisponde a “a”, “b”, “z”.                                             |                                           |
-| Ancore              | ^                                                                        | Corrisponde all’inizio di una stringa.                                         | ^cat corrisponde a “cat” solo all’inizio. |
-| $                   | Corrisponde alla fine di una stringa.                                    | cat$ corrisponde a “cat” solo alla fine.                                       |                                           |
-| Gruppi e opzioni    | ()                                                                       | Raggruppa i caratteri per creare sottospazi nei pattern.                       | (abc) raggruppa “abc”.                    |
-| `                   | `                                                                        | Rappresenta un “o” logico (pipe).                                              |                                           |
-| Quantificatori      | {n}                                                                      | Esattamente n ripetizioni dell’elemento precedente.                            | a{3} corrisponde a “aaa”.                 |
-| {n,m}               | Da n a m ripetizioni dell’elemento precedente.                           | a{2,4} corrisponde a “aa”, “aaa”, “aaaa”.                                      |                                           |
-| Backslash e simili  | \d                                                                       | Qualsiasi cifra numerica (equivale a [0-9]).                                   | \d corrisponde a “0”, “1”, “9”.           |
-| \D                  | Qualsiasi carattere che non sia una cifra numerica.                      | \D corrisponde a “a”, “z” (non “5”).                                           |                                           |
-| \w                  | Qualsiasi carattere alfanumerico o underscore (equivale a [a-zA-Z0-9_]). | \w corrisponde a “a”, “9”, “_”.                                                |                                           |
-| \W                  | Qualsiasi carattere che non sia alfanumerico o underscore.               | \W corrisponde a “#”, “%” (non “a”).                                           |                                           |
-| \s                  | Qualsiasi spazio bianco (spazi, tab, ecc.).                              | \s corrisponde a “ ”, “                                                        | ”.                                        |
-| \S                  | Qualsiasi carattere che non sia uno spazio bianco.                       | \S corrisponde a “a”, “1” (non “ ”).                                           |                                           |
-| \b                  | Corrisponde a un confine di parola.                                      | \bword\b corrisponde a “word” come parola intera.                              |                                           |
-| \B                  | Corrisponde a un punto che non è un confine di parola.                   | \Bword corrisponde a “password” ma non a “word” come parola isolata.           |                                           |
-| \1, \2…             | Riferimento ai gruppi catturati nei pattern.                             | (\d{2})-(\d{2})\1 corrisponde a “12-34-12” (il gruppo 1 è ripetuto alla fine). |                                           |
-| \\                  | Rappresenta un singolo backslash.                                        | \\d corrisponde al testo “\d” nella stringa (non a una cifra).                 |                                           |
-
-
+![924EC57C-DDFE-4C11-B4B7-41395897D6AA](https://github.com/user-attachments/assets/f3470295-147c-4bdf-858c-9d0b0dd6f65f)
+![500EB1BC-C006-4BA7-9A17-324527EC160C](https://github.com/user-attachments/assets/b70664dc-9117-4ee8-9017-618076e7a65d)
+![DCE9C33D-0E85-4A59-BDDE-466439A49114](https://github.com/user-attachments/assets/daee0ec6-ae10-45e5-b455-adcc0c38ea1c)

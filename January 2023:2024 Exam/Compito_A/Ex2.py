@@ -1,5 +1,42 @@
 def Ex2(file):
-    """MODIFICARE IL CONTENUTO DI QUESTA FUNZIONE PER SVOLGERE L'ESERCIZIO"""
+    x = set()
+    max_dist = 0
+    with open(file, 'r', encoding='UTF-8') as f:
+        parole = f.read().strip().split() # Ho una lista di parole perché ho usato split()
+
+        for parola in parole:  # Iteriamo direttamente sulle parole
+            for i in range(len(parola)):  # Indice del primo carattere
+                if parola[i] == 'a':
+                    for j in range(i + 1, len(parola)): # Indice del secondo carattere
+                        if parola[j] == 'a':
+                            dist = j - i - 1 # GENIALE (!!) non ci avevo pensato
+                            if dist >= max_dist:
+                                max_dist = dist
+                                x.add(parola)
+    return x
+
+
+
+
+                            
+# DA QUESTO ESERCIZIO HO CAPITO CHE:
+
+    #-> 1) Dare il giusto nome ai contatori ti SALVA
+    #-> 2) Sapere se stai iterando su tutti indici o su tutte stringhe è FONDAMENTALE
+    #-> 3) Fondamentale saper ragionare algebricamente: DISTANZA tra 2 elementi ti dovrebbe
+    #      immediatamente far pensare a DIFFERENZA DEGLI INDICI.
+
+
+
+
+
+
+
+
+            
+
+
+
 
 ###############################################################################
 

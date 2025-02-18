@@ -40,6 +40,3 @@ Analyzing system logs to extract specific information.
 Manipulating strings in various file formats like CSV, XML, or JSON.
 In short, regular expressions are a powerful and flexible tool for managing textual data in Python.
 
-![924EC57C-DDFE-4C11-B4B7-41395897D6AA](https://github.com/user-attachments/assets/f3470295-147c-4bdf-858c-9d0b0dd6f65f)
-![500EB1BC-C006-4BA7-9A17-324527EC160C](https://github.com/user-attachments/assets/b70664dc-9117-4ee8-9017-618076e7a65d)
-![DCE9C33D-0E85-4A59-BDDE-466439A49114](https://github.com/user-attachments/assets/daee0ec6-ae10-45e5-b455-adcc0c38ea1c)

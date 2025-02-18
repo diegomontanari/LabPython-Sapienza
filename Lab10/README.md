@@ -42,30 +42,30 @@ In short, regular expressions are a powerful and flexible tool for managing text
 
 
 
-| **Category**                 | **Symbol/Pattern**  | **Description**                                                        | **Example**                                      |
-|------------------------------|---------------------|-------------------------------------------------------------------------|--------------------------------------------------|
-| **Literal characters**        | cat                 | Matches exactly the specified text.                                     | cat matches "cat".                              |
-| **Metacharacters**            | .                   | Matches any character except a newline.                                 | a.b matches "acb", "a2b".                       |
-|                              | *                   | Zero or more repetitions of the preceding element.                       | a*b matches "b", "ab", "aaab".                  |
-|                              | +                   | One or more repetitions of the preceding element.                        | a+b matches "ab", "aaab" (not "b").             |
-|                              | ?                   | Zero or one repetition of the preceding element.                         | colou?r matches "color" or "colour".            |
-| **Character classes**         | [abc]               | Any character among those specified.                                    | [abc] matches "a", "b", or "c".                 |
+| **Category**                 | **Symbol/Pattern**  | **Description**                                                         | **Example**                                     |
+|------------------------------|---------------------|-------------------------------------------------------------------------|-------------------------------------------------|
+| **Literal characters**       | cat                 | Matches exactly the specified text.                                     | cat matches "cat".                              |
+| **Metacharacters**           | .                   | Matches any character except a newline.                                 | a.b matches "acb", "a2b".                       |
+|                              | *                   | Zero or more repetitions of the preceding element.                      | a*b matches "b", "ab", "aaab".                  |
+|                              | +                   | One or more repetitions of the preceding element.                       | a+b matches "ab", "aaab" (not "b").             |
+|                              | ?                   | Zero or one repetition of the preceding element.                        | colou?r matches "color" or "colour".            |
+| **Character classes**        | [abc]               | Any character among those specified.                                    | [abc] matches "a", "b", or "c".                 |
 |                              | [^abc]              | Any character except those specified.                                   | [^abc] matches "d", "e" (not "a").              |
 |                              | [0-9]               | Any numeric digit.                                                      | [0-9] matches "0", "1", "9".                    |
 |                              | [a-z]               | Any lowercase letter.                                                   | [a-z] matches "a", "b", "z".                    |
-| **Anchors**                   | ^                   | Matches the beginning of a string.                                      | ^cat matches "cat" only at the beginning.       |
+| **Anchors**                  | ^                   | Matches the beginning of a string.                                      | ^cat matches "cat" only at the beginning.       |
 |                              | $                   | Matches the end of a string.                                            | cat$ matches "cat" only at the end.             |
-| **Groups and options**        | ()                  | Groups characters to create subspaces in patterns.                       | (abc) groups "abc".                             |
-|                              | `                    | Represents a logical "or" (pipe).                                       |                                                  |
-| **Quantifiers**               | {n}                 | Exactly n repetitions of the preceding element.                          | a{3} matches "aaa".                             |
-|                              | {n,m}               | From n to m repetitions of the preceding element.                        | a{2,4} matches "aa", "aaa", "aaaa".             |
-| **Backslash and similar**     | \d                  | Any numeric digit (equivalent to [0-9]).                                 | \d matches "0", "1", "9".                       |
-|                              | \D                  | Any character that is not a numeric digit.                               | \D matches "a", "z" (not "5").                  |
-|                              | \w                  | Any alphanumeric character or underscore (equivalent to [a-zA-Z0-9_]).   | \w matches "a", "9", "_".                        |
-|                              | \W                  | Any character that is not alphanumeric or underscore.                   | \W matches "#", "%" (not "a").                 |
-|                              | \s                  | Any whitespace character (spaces, tabs, etc.).                           | \s matches " ", "\t".                           |
-|                              | \S                  | Any character that is not a whitespace.                                  | \S matches "a", "1" (not " ").                  |
+| **Groups and options**       | ()                  | Groups characters to create subspaces in patterns.                      | (abc) groups "abc".                             |
+|                              | '|'                 | Represents a logical "or" (pipe).                                       |                                                 |
+| **Quantifiers**              | {n}                 | Exactly n repetitions of the preceding element.                         | a{3} matches "aaa".                             |
+|                              | {n,m}               | From n to m repetitions of the preceding element.                       | a{2,4} matches "aa", "aaa", "aaaa".             |
+| **Backslash and similar**    | \d                  | Any numeric digit (equivalent to [0-9]).                                | \d matches "0", "1", "9".                       |
+|                              | \D                  | Any character that is not a numeric digit.                              | \D matches "a", "z" (not "5").                  |
+|                              | \w                  | Any alphanumeric character or underscore (equivalent to [a-zA-Z0-9_]).  | \w matches "a", "9", "_".                       |
+|                              | \W                  | Any character that is not alphanumeric or underscore.                   | \W matches "#", "%" (not "a").                  |
+|                              | \s                  | Any whitespace character (spaces, tabs, etc.).                          | \s matches " ", "\t".                           |
+|                              | \S                  | Any character that is not a whitespace.                                 | \S matches "a", "1" (not " ").                  |
 |                              | \b                  | Matches a word boundary.                                                | \bword\b matches "word" as a whole word.        |
-|                              | \B                  | Matches a position that is not a word boundary.                          | \Bword matches "password" but not "word" as an isolated word. |
+|                              | \B                  | Matches a position that is not a word boundary.                         | \Bword matches "password" but not "word" only   |
 |                              | \1, \2…             | References to captured groups in patterns.                              | (\d{2})-(\d{2})\1 matches "12-34-12".           |
-|                              | \\                  | Represents a single backslash.                                          | \\d matches the text "\d" in the string (not a digit). |
+|                              | \\                  | Represents a single backslash.                                          | \\d matches the text "\d" in the string no-dig. |
